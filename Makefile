@@ -1,8 +1,7 @@
 BOARD = esp8266:esp8266:nodemcuv2
 PORT  = /dev/cu.usbserial-1130
 
-PROJECT ?= webserver-arduino
-SKETCH  = $(PROJECT)/$(PROJECT).ino
+SKETCH = webserver-arduino.ino
 
 all: compile
 
@@ -17,4 +16,3 @@ monitor:
 
 clean:
 	rm -rf build
-
